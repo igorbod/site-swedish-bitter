@@ -15,6 +15,7 @@
 </head>
 <body>
   
+  <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
@@ -27,11 +28,10 @@
           Доставка по всей России
         </div>
         <div class="header__phone">
-          
+          <svg class="social__svg social__svg-phone">
+            <use xlink:href="img/icons/sprite.svg#phone"></use>
+          </svg>
           <a href="tel:88000000000" class="header__phone-link">
-            <svg class="social__svg social__svg-phone">
-              <use xlink:href="img/icons/sprite.svg#phone"></use>
-            </svg>
             8 800 000-00-00 
             <span class="header__phone-subtitle">Звонок бесплатный</span> 
           </a>
@@ -39,6 +39,49 @@
       </div>
     </div>
   </header>
+
+  <!-- Section Promo -->
+  <section class="section promo">
+    <div class="promo__bg"></div>
+    <div class="promo__wrapper">
+      <div class="container">
+        <div class="promo__inner">
+          <div class="promo__inner-image">
+            <img src="img/promo/main-goods-cover.png" alt="Swedish Bitter" class="promo__img">
+          </div>
+          
+          <div class="promo__inner-descr">
+            <div class="promo__inner-suptitle">
+              Сбор трав
+            </div>
+            <div class="promo__inner-title">
+              Шведская горечь
+            </div>
+            <div class="promo__inner-text">
+              Не имеет аналогов в мире по оздоровительной силе и широте лечебных свойств
+            </div>
+            
+            <div class="promo__inner-form">
+              <form class="main-form promo-form">
+                <div class="main-form__wrapper inner-form__wrapper">
+                  <div class="main-form__title inner-form__title">
+                    Узнайте подробнее <br>о бальзаме
+                  </div>
+                  <input name="name" placeholder="Имя" type="text">
+                  <input name="phone" placeholder="Телефон">
+                  <button class="button button_promo-submit">
+                    Узнать
+                    <img src="img/icons/arrow-right.png" alt="arrow-right" class="button-arrow">
+                  </button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 
