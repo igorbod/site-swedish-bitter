@@ -4,6 +4,7 @@
 @import 'blocks/header'
 @import 'blocks/promo'
 @import 'blocks/advantages'
+@import 'blocks/symptoms'
 
 html
   height: 100%
@@ -21,6 +22,14 @@ body
   max-width: 1200px
   padding: 0 15px
   margin: 0 auto
+
+// Section styles
+.section
+  &__title
+    color: $main-color
+    font-size: 40px
+    font-weight: 700
+    line-height: 50px
  
 // Forms
 .main-form
@@ -50,7 +59,7 @@ body
 // Buttons
 .button
   position: relative
-  min-height: 60px
+  min-height: 70px
   min-width: 250px
   border: none
   outline: none
@@ -60,7 +69,9 @@ body
   font-size: 14px
   font-weight: 700
   letter-spacing: 0.7px
-  padding: 20px  
+  padding: 20px
+  vertical-align: middle
+  cursor: pointer
   &__arrow
     width: 31px
     height: 9px
@@ -70,6 +81,18 @@ body
     position: absolute
     bottom: 0
     right: 0
+  &_symptoms
+    display: block
+    width: 500px
+    margin-left: auto
+    text-align: center
+    vertical-align: middle
+    line-height: 2
+    color: #ffffff
+    &:hover
+      color: #ffffff
+      text-decoration: none
+    
 
   
   
