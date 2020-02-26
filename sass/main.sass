@@ -5,6 +5,7 @@
 @import 'blocks/promo'
 @import 'blocks/advantages'
 @import 'blocks/symptoms'
+@import 'blocks/pop'
 
 html
   height: 100%
@@ -72,6 +73,9 @@ body
   padding: 20px
   vertical-align: middle
   cursor: pointer
+  &:hover
+      color: #ffffff
+      text-decoration: none
   &__arrow
     width: 31px
     height: 9px
@@ -89,10 +93,37 @@ body
     vertical-align: middle
     line-height: 2
     color: #ffffff
-    &:hover
-      color: #ffffff
-      text-decoration: none
     
+  // pop button
+  &_pop
+    display: block
+    width: 100%
+    text-align: center
+    vertical-align: middle
+    line-height: 2
 
-  
-  
+// "Postscript" block
+.postscript
+  background-color: #f6f9f3
+  padding: 20px
+  position: absolute
+  &__wrapper
+    position: relative
+    border: 1px solid rgba(164, 197, 140, 0.6)
+  &__text
+    padding: 35px 27px 38px 39px
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
+    color: $main-color
+  &_symptoms
+    bottom: 0
+    left: 0
+    max-width: 416px
+    width: 100%
+  &_pop
+    bottom: -90px
+    right: 0
+    max-width: 601px
+    width: 100%
+    background-color: #ffffff
