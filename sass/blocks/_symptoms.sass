@@ -20,7 +20,7 @@
     display: flex
     flex-direction: row
     justify-content: space-between
-    align-items: flex-start
+    align-items: center
     margin-bottom: 40px
     &-right
       position: relative
@@ -69,6 +69,11 @@
   flex-wrap: wrap
   flex-direction: row
 
+.tab-item
+  display: none
+  &:first-child
+    display: block
+
 .tab
   &__item
     padding: 25px 0px
@@ -80,6 +85,10 @@
     letter-spacing: 0.7px
     color: $main-color
     border-bottom: 1px solid rgba(164, 197, 140, 0.2)
+    cursor: pointer
+    transition: text-shadow .3s
+    &:hover
+      text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
     &_compress
       padding: 20px 40px
       display: flex
@@ -114,4 +123,48 @@
     &-name
       display: inline-block
 
+.tabs__content
+  position: relative
+  &-num
+    position: absolute
+    width: 43px
+    height: 43px
+    text-align: center
+    color: #ffffff
+    font-size: 12px
+    font-weight: 700
+    line-height: 26px
+    vertical-align: middle
+    text-transform: uppercase
+    letter-spacing: 0.6px
+    background-color: $accent
+    border-radius: 50%
+    border: solid 9px rgba(255, 255, 255, .90);
+    &_1
+      top: 210px
+      left: 150px
+    &_2
+      top: 60px
+      left: 235px
+    &_3
+      top: 50px
+      left: 205px
+    &_4
+      top: 160px
+      left: 245px
+    &_5
+      top: 40px
+      left: 205px
+    &_6
+      top: 265px
+      left: 310px
+    &_7
+      top: 90px
+      left: 240px
+    &_8
+      top: 200px
+      left: 230px
+    &_9
+      top: 80px
+      left: 280px
 
