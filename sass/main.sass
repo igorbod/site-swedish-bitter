@@ -9,6 +9,7 @@
 @import 'blocks/history'
 @import 'blocks/quote'
 @import 'blocks/complete-set'
+@import 'blocks/composition'
 
 html
   height: 100%
@@ -113,7 +114,6 @@ body
     min-height: 60px
     width: 100%
     margin-top: 34px
-    
   // pop button
   &_pop
     display: block
@@ -121,7 +121,14 @@ body
     text-align: center
     vertical-align: middle
     line-height: 2
-
+  &_composition
+    position: absolute
+    bottom: 0
+    right: 0
+    min-height: 60px
+    min-width: 350px
+    text-align: center
+  
 // "Postscript" block
 .postscript
   background-color: #f6f9f3
@@ -136,6 +143,8 @@ body
     font-weight: 400
     line-height: 24px
     color: $main-color
+    &_composition
+      padding: 55px 80px 90px 80px
   &_symptoms
     bottom: 0
     left: 0
@@ -146,4 +155,8 @@ body
     right: 0
     max-width: 601px
     width: 100%
+    background-color: #ffffff
+  &_composition
+    position: relative
+    max-width: 860px
     background-color: #ffffff

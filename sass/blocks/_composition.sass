@@ -1,0 +1,92 @@
+.composition
+  margin-bottom: 198px
+  &__row
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-end
+    &:nth-child(2)
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+    &:nth-child(3)
+      justify-content: space-between
+      align-items: center      
+  &__top
+    max-width: 515px
+    margin-left: 75px
+  &__title
+    margin-bottom: 40px
+  &__item
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    width: 270px
+    height: 270px
+    background-color: $bg-extra
+    margin: 15px 0
+    color: $accent-light
+    font-size: 14px
+    font-weight: 400
+    line-height: 24px
+    letter-spacing: 0.42px
+    padding: 15px 8px 13px 8px
+    &_1
+      background: url('../img/composition/item-1.png') center no-repeat $bg-extra
+      margin-right: 30px
+    &_2
+      background: url('../img/composition/item-2.png') center no-repeat $bg-extra
+    &_3
+      background: url('../img/composition/item-3.png') center no-repeat $bg-extra
+    &_4
+      background: url('../img/composition/item-4.png') center no-repeat $bg-extra
+    &_5
+      background: url('../img/composition/item-5.png') center no-repeat $bg-extra
+    &_6
+      background: url('../img/composition/item-6.png') center no-repeat $bg-extra
+    &_7
+      background: url('../img/composition/item-7.png') center no-repeat $bg-extra
+    &_8
+      background: url('../img/composition/item-8.png') center no-repeat $bg-extra
+    &_9
+      background: url('../img/composition/item-9.png') center no-repeat $bg-extra
+    &_10
+      background: url('../img/composition/item-10.png') center no-repeat $bg-extra
+    &_11
+      background: url('../img/composition/item-11.png') center no-repeat $bg-extra
+    &-num
+      font-weight: 700
+      transform: rotate(180deg);
+      writing-mode: tb;
+      &::before
+        content: '\2014'
+        padding-right: 3px
+    &-name
+      transform: rotate(180deg);
+      writing-mode: tb;
+      align-self: flex-end
+  &__list
+    padding: 0
+    padding-left: 45px
+    margin-bottom: 50px
+    list-style: none
+    &-item
+      position: relative
+      color: $main-color
+      font-size: 16px
+      font-weight: 400
+      line-height: 22px
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+      &::before
+        content: ''
+        position: absolute
+        height: 7px
+        width: 7px
+        top: 6px
+        left: -20px
+        background-color: $accent-light
+        border-radius: 50%
