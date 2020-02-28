@@ -19,6 +19,7 @@
   &__title
     margin-bottom: 40px
   &__item
+    position: relative
     display: flex
     flex-direction: row
     justify-content: space-between
@@ -64,9 +65,27 @@
         content: '\2014'
         padding-right: 3px
     &-name
-      transform: rotate(180deg);
+      transform: rotate(180deg)
       writing-mode: tb;
       align-self: flex-end
+    &-hover
+      display: flex
+      opacity: 0
+      justify-content: center
+      align-items: center
+      position: absolute
+      top: 20px
+      left: 20px
+      right: 20px
+      bottom: 20px
+      background-color: rgba(138, 178, 94, .8)
+      transition: opacity .5s ease
+      &-text
+        color: #ffffff
+        font-size: 14px
+        font-weight: 700
+        line-height: 20px
+        text-align: center
   &__list
     padding: 0
     padding-left: 45px
