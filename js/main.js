@@ -27,3 +27,13 @@ $(function() {
   });
 });
 
+$(function () {
+  $('.reviews-tabs__wrapper .tab').on('click', function (event) {
+    let id = $(this).attr('data-id');
+    $('.reviews-tabs__wrapper').find('.tab-item').removeClass('active-tab').hide();
+    $('.reviews-tabs__wrapper .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id).addClass('active-tab').fadeIn();
+    return false;
+  });
+});
