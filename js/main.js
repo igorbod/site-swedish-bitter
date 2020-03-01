@@ -17,23 +17,13 @@ compositionItem.forEach(function(item, i) {
 
 
 $(function() {
-  $('.symptoms__tabs-wrapper .tab').on('click', function (event) {
+  $('.symptoms__tabs-wrapper .tab, .reviews-tab__item').on('click', function (event) {
     let id = $(this).attr('data-id');
-    $('.symptoms__tabs-wrapper').find('.tab-item').removeClass('active-tab').hide();
-    $('.symptoms__tabs-wrapper .tabs').find('.tab').removeClass('active');
+    $('.symptoms__tabs-wrapper, .reviews-tabs__wrapper').find('.tab-item, .reviews__tab-item').removeClass('active-tab').hide();
+    $('.symptoms__tabs-wrapper .tabs, .reviews-tabs').find('.tab, .reviews-tab__item').removeClass('active');
     $(this).addClass('active');
     $('#' + id).addClass('active-tab').fadeIn();
     return false;
   });
 });
 
-$(function () {
-  $('.reviews-tabs__wrapper .tab').on('click', function (event) {
-    let id = $(this).attr('data-id');
-    $('.reviews-tabs__wrapper').find('.tab-item').removeClass('active-tab').hide();
-    $('.reviews-tabs__wrapper .tabs').find('.tab').removeClass('active');
-    $(this).addClass('active');
-    $('#' + id).addClass('active-tab').fadeIn();
-    return false;
-  });
-});

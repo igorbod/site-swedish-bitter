@@ -1,17 +1,19 @@
 .reviews
   margin-bottom: 200px
   &__wrapper
-    background-color: $bg-extra
+    overflow: hidden
+  &__tab-item
+    display: none
+    &:first-child
+      display: block
   &__top
     max-width: 500px
     margin-bottom: 45px
   &-tabs
-    display: flex
-    flex-direction: row
-    justify-content: flex-start
-    align-items: center
     .active
       color: $accent
+      background-color: $bg-extra
+    &__content
       background-color: $bg-extra
 
     &__content-inner
@@ -21,7 +23,6 @@
       justify-content: space-around
       align-items: flex-start
       padding: 80px 0 60px 0
-      // min-height: 500px
     &__review-item
       position: relative
       max-width: 470px
@@ -45,6 +46,8 @@
         background-color: $accent-light
     &__wrapper
   &-tab__item
+    position: relative
+    display: inline-block
     padding: 25px 40px 25px 85px
     color: #c3c3c3
     background-color: #ffffff
@@ -53,6 +56,30 @@
     line-height: 14px
     text-transform: uppercase
     letter-spacing: 0.7px
+    cursor: pointer
+  &-tab__item.active
+    &:first-child
+      &::before
+        content: ''
+        position: absolute
+        background-color: $bg-extra
+        width: 100%
+        height: 100%
+        top: 0
+        right: 100%
+  &-tab__item.active
+    &:last-child
+      &::after
+        content: ''
+        position: absolute
+        background-color: $bg-extra
+        width: 100%
+        height: 100%
+        top: 0
+        left: 100%
+        
+      
+
   &__bottom-wrapper
     display: flex
     flex-direction: row
