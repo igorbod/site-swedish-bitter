@@ -5,6 +5,7 @@
     &__img
       margin-left: 0
   .advantages
+    margin-bottom: 60px
     &__wrapper
       flex-wrap: wrap
       justify-content: center
@@ -12,6 +13,10 @@
       max-width: 45%
       width: 100%
       margin: 10px
+  .symptoms
+    padding: 0 15px
+    margin-bottom: 60px
+    
 
 @media (max-width: 991px)
   .promo
@@ -40,7 +45,72 @@
     &__item
       max-width: 250px
       width: 100%
-  
+  .symptoms
+    padding: 0
+    .container
+      padding: 0
+    &__tabs-wrapper
+      flex-direction: column
+      margin-bottom: 0
+      &-right
+        background: url(../img/symptoms/content-bg.jpg) center center no-repeat $accent-light
+        max-width: 100% 
+        margin-left: 0
+      &-left
+    &__title
+      margin: 45px auto
+      display: block
+    &__bg
+      position: relative
+      z-index: 0
+      top: 0
+      left: 0
+      bottom: 0
+      transform: none
+  .tabs__main
+    background-color: $bg-extra
+    .tab__item
+      padding-left: 60px
+  .tabs__compress
+    background-color: $bg-extra
+    .tab__item
+      &:first-child,
+      &:nth-child(2)
+        padding-left: 60px
+  .tabs__content-num_1
+    top: 100px
+    left: 470px
+  .tabs__content-num_2
+    top: 60px
+    left: 470px
+  .tabs__content-num_3
+    top: 30px
+    left: 465px
+  .tabs__content-num_4
+    top: 117px
+    left: 415px
+  .tabs__content-num_5
+    top: 20px
+    left: 495px
+  .tabs__content-num_6
+    top: 305px
+    left: 420px
+  .tabs__content-num_7
+    top: 70px
+    left: 520px
+  .tabs__content-num_8
+    top: 230px
+    left: 470px
+  .tabs__content-num_9 
+    top: 60px
+    left: 430px
+        
+  .postscript_symptoms
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -20px
+  .button_symptoms
+    margin: 40px auto
 
 @media (max-width: 945px)
   .promo
@@ -74,6 +144,25 @@
   .promo  
     &__img
       max-width: 150px
+  .symptoms
+    &__title
+      font-size: 24px
+      text-align: center
+      line-height: 1.2
+      max-width: 280px
+      margin-bottom: 20px
+    .tab__item
+      padding-left: 15px
+    .tab__item_compress
+      width: 100%
+      padding-left: 15px
+      &:nth-child(2)
+        order: -1
+      &:first-child,
+      &:nth-child(2)
+        padding-left: 15px
+      
+        
 
 @media (max-width: 600px)
   .promo  
@@ -138,3 +227,41 @@
       width: 100%
     .container
       padding: 0
+  .symptoms
+    &__title
+    &__tabs-wrapper-right
+      background: none
+      min-height: 0
+    .tabs__content
+      display: none
+  .postscript_symptoms
+    width: 100%      
+    max-width: 100%
+    left: 0
+    transform: none
+    position: relative
+    bottom: 0
+    padding: 10px
+  .postscript__text
+    font-size: 14px
+    padding: 40px 20px
+    text-align: center
+  .reviews-more_symptoms
+    left: 50%
+    transform: translateX(-50%)
+    padding: 0 10px
+    bottom: -10px
+  .button_symptoms
+    text-align: center
+    margin-top: 20px
+    margin-bottom: 0
+    max-width: 100%
+    width: 100%
+    font-size: 12px
+    line-height: 30px
+    img
+      display: none
+  .tab__item
+    font-size: 12px
+    display: flex
+    align-items: center
