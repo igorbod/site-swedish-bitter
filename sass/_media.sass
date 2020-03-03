@@ -179,6 +179,20 @@
   .button_symptoms
     margin: 40px auto
 
+  .quote
+    margin-bottom: 0
+    &__wrapper
+      min-height: 0
+    &__bg
+      display: none
+    &__text
+      font-size: 18px
+      line-height: 36px
+    &__author
+      font-size: 16px
+      &-mark
+        font-size: 12px
+
 @media (max-width: 945px)
   .promo
     &__inner-suptitle,
@@ -418,3 +432,21 @@
     &__title
       font-size: 20px
       line-height: 26px
+  
+  .quote
+    margin-bottom: 50px
+    &__inner
+      border: none
+      padding: 0
+    &__text
+      font-size: 14px
+      line-height: 24px
+    &__author
+      font-size: 14px
+      line-height: 18px
+      max-width: 150px
+      display: block
+      margin: 0 auto
+      &-mark
+        display: block
+        margin-top: 15px
