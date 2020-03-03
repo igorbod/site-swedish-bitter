@@ -1,3 +1,16 @@
+
+@media (max-width: 1600px)
+  .pop
+    &__right
+      background-color: #ffffff
+      padding-left: 20px
+      padding-right: 0
+
+@media (max-width: 1400px)
+  .pop
+    &__wrapper
+      background-size: 750px
+
 @media (max-width: 1200px)
   .promo
     &__inner-descr
@@ -16,6 +29,30 @@
   .symptoms
     padding: 0 15px
     margin-bottom: 60px
+  .pop
+    &__wrapper
+      background-image: none
+    &__inner
+      flex-direction: column
+    &__right
+      order: -1
+      max-width: 730px
+    &__title
+      text-align: center
+      font-size: 40px
+    &__subtitle
+      text-align: center
+    &__list-item
+      margin-bottom: 25px
+    &__left
+      margin-right: 0
+      margin-top: 50px
+      background: url('../img/pop/main-img.jpg') center (center/cover) no-repeat
+      max-width: 100%
+    .postscript_pop
+      left: 50%
+      transform: translateX(-50%)
+
     
 
 @media (max-width: 991px)
@@ -129,6 +166,16 @@
   .advantages
     &__wrapper
       padding: 0
+  .pop
+    .container
+      padding: 0
+    &__right
+      max-width: 550px
+    &__title
+      font-size: 30px
+      line-height: 40px
+    &__subtitle
+      margin-bottom: 40px
 
 
 @media (max-width: 700px)
@@ -195,6 +242,9 @@
     &__wrapper
     &__item
       max-width: 300px
+  .button_pop
+    img
+      display: none
 
 @media (max-width: 480px)
   .header
@@ -265,3 +315,41 @@
     font-size: 12px
     display: flex
     align-items: center
+  .pop
+    &__title
+      font-size: 24px
+      line-height: 30px
+      max-width: 285px
+      display: block
+      margin: 0 auto
+      margin-bottom: 30px
+    &__subtitle
+      font-size: 12px
+    &__right
+      padding: 0
+    &__list-item
+      margin-bottom: 20px
+      padding-right: 10px
+      &::before
+        top: 10%
+        transform: none
+        left: -30px
+    &__left
+      margin-top: 30px
+      min-height: 245px
+    .postscript_pop
+      padding: 0
+      left: 0
+      transform: none
+      bottom: -100%
+      .postscript__wrapper
+        border: none
+    .button_pop
+      max-width: 100%
+      font-size: 12px
+      line-height: 30px
+      .button_pop-hidden
+        display: inline-block
+      .button_pop-showed
+        display: none
+
