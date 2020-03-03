@@ -5,6 +5,9 @@
       background-color: #ffffff
       padding-left: 20px
       padding-right: 0
+  .history
+    &__wrapper
+      background-size: 600px
 
 @media (max-width: 1400px)
   .pop
@@ -52,7 +55,34 @@
     .postscript_pop
       left: 50%
       transform: translateX(-50%)
-
+  .history
+    .container
+      padding: 0
+    &__wrapper
+      background: none
+    &__inner
+      max-width: 100% 
+    &__form-inner
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+    &__title
+      text-align: center
+      max-width: 600px
+      display: block
+      margin: 0 auto
+      margin-bottom: 40px
+    &__text
+      padding: 40px 30px 50px 20px
+    .main-form_history
+      margin: 0
+    &__hidden-img
+      display: block
+      background: url('../img/history/history.jpg') center (center/cover) no-repeat
+      min-height: 419px
+      max-width: 352px
+      width: 100%
     
 
 @media (max-width: 991px)
@@ -176,6 +206,14 @@
       line-height: 40px
     &__subtitle
       margin-bottom: 40px
+  .history
+    &__form-inner
+      padding: 0 20px 0 60px
+    .main-form_history
+      margin-right: 45px
+    &__text
+       margin-bottom: -25px
+       z-index: -1
 
 
 @media (max-width: 700px)
@@ -245,6 +283,22 @@
   .button_pop
     img
       display: none
+  .history
+    &__title
+      font-size: 30px
+      max-width: 500px
+      line-height: 40px
+      margin-bottom: 30px
+    &__text
+      margin-bottom: 0
+    &__form-inner
+      flex-direction: column-reverse
+    &__hidden-img
+      margin-bottom: 30px
+    .main-form_history
+      margin-right: 0
+    .history-form__wrapper
+      text-align: center
 
 @media (max-width: 480px)
   .header
@@ -352,4 +406,15 @@
         display: inline-block
       .button_pop-showed
         display: none
-
+  .history
+    margin-top: 240px
+    &__form-inner
+      padding: 0
+    .history-form__title
+      padding: 0 50px
+    &__text
+      padding-left: 10px
+      padding-right: 10px
+    &__title
+      font-size: 20px
+      line-height: 26px
