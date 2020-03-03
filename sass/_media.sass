@@ -83,6 +83,27 @@
       min-height: 419px
       max-width: 352px
       width: 100%
+
+  .complete-set
+    padding-top: 60px
+    background-color: $bg-extra
+    &__title
+      max-width: 80% 
+      text-align: center
+      margin: 0 auto
+      margin-bottom: 105px
+    .container
+      padding: 0
+    &__set
+      max-width: 80%
+      width: 100%
+    &__item
+      min-width: 225px
+      min-height: 225px
+      &-title
+        font-size: 10px
+      
+
     
 
 @media (max-width: 991px)
@@ -193,6 +214,20 @@
       &-mark
         font-size: 12px
 
+  .complete-set
+    padding-top: 100px
+    &__inner
+      padding-bottom: 60px
+    &__title
+      font-size: 30px
+      line-height: 40px
+      max-width: 60%
+    &__set
+      max-width: 725px
+    &__item
+      margin: 7px
+      &-title
+
 @media (max-width: 945px)
   .promo
     &__inner-suptitle,
@@ -228,6 +263,13 @@
     &__text
        margin-bottom: -25px
        z-index: -1
+
+
+@media (max-width: 760px)
+  .complete-set
+    &__set
+      background-color: transparent
+      flex-direction: column
 
 
 @media (max-width: 700px)
@@ -450,3 +492,20 @@
       &-mark
         display: block
         margin-top: 15px
+
+  .complete-set
+    &__inner
+      padding-bottom: 0
+    &__title
+      font-size: 24px
+      line-height: 30px
+      max-width: 80% 
+    &__item
+      background-color: transparent
+      border: none
+      &:before
+        color: #fff
+        font-size: 130px
+        top: -15px
+      &-title
+        font-size: 12px
