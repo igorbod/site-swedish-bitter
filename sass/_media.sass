@@ -132,6 +132,7 @@
       margin-left: 0
 
   .reviews
+    margin-bottom: 60px
     &__top
       max-width: 100% 
       width: 100%
@@ -142,10 +143,14 @@
   .reviews-tabs__review-item
     &:nth-child(even)
       display: none
-      
-      
 
-    
+  .participation
+    &__wrapper
+      background: none
+      justify-content: center
+      padding-top: 0
+    &__inner
+      margin: 0 auto
 
 @media (max-width: 991px)
   .promo
@@ -388,6 +393,9 @@
       &:nth-child(3)
         flex-wrap: wrap-reverse
         max-width: 700px
+  .button_participation
+    img
+      display: none
         
 
 @media (max-width: 700px)
@@ -420,8 +428,15 @@
       &:first-child,
       &:nth-child(2)
         padding-left: 15px
-      
-        
+  
+  .participation
+    &__title
+      font-size: 24px
+      line-height: 30px        
+      text-align: center
+    &__text
+      font-size: 14px
+      line-height: 22px
 
 @media (max-width: 600px)
   .promo  
@@ -508,6 +523,19 @@
     img
       display: none
   
+  .participation
+    &__item
+      padding: 0
+      &-inner
+        border: none
+    &__subtext
+      text-align: center
+      font-size: 12px
+      line-height: 20px
+      margin-bottom: 40px
+  .button_participation
+    font-size: 12px
+    line-height: 22px
 
 @media (max-width: 480px)
   .header
@@ -687,3 +715,17 @@
     img
       display: none
   
+  .participation
+    &__title
+      padding: 10px
+    &__text
+      padding: 10px
+    &__subtext
+      padding: 10px
+    .container
+      padding: 0
+    &__wrapper
+      display: block
+    &__item
+      &-inner
+        padding: 0
