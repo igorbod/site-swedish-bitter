@@ -14,6 +14,26 @@
     &__wrapper
       background-size: 750px
 
+@media (max-width: 1260px)
+  .garanty
+    &__inner
+      flex-direction: row-reverse
+      justify-content: center
+      align-items: flex-end
+      padding: 0
+    &__inner-left
+      margin-right: 0
+    &__title
+      text-align: center
+    &__bg
+      margin-top: 0
+      min-height: 434px
+      max-width: 280px
+      background: url(../img/garanty/certificate.jpg) center (center/cover) no-repeat
+      margin-right: 30px
+      
+
+
 @media (max-width: 1200px)
   .promo
     &__inner-descr
@@ -145,6 +165,7 @@
       display: none
 
   .participation
+    margin-bottom: 70px
     &__wrapper
       background: none
       justify-content: center
@@ -335,6 +356,45 @@
     margin-bottom: 30px
   .button_reviews
     margin-left: 0
+  
+  .participation
+    margin-bottom: 20px
+
+  .garanty
+    &__wrapper
+      padding: 40px 0px 100px 0px
+    &__descr
+      max-width: 505px
+      width: 100%
+      margin: 0
+      text-align: center
+      margin-bottom: 40px
+    &__title
+      font-size: 30px
+      line-height: 50px
+    &__inner
+      
+    &__inner-left
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap  
+      justify-content: center   
+    &__title
+      
+    &__bg
+      margin-right: 30px
+      &_hidden
+        display: block
+      &_show
+        display: none
+    .postscript_garanty
+      max-width: 55%
+      width: 100%
+      .postscript__wrapper
+        min-height: 400px
+  .button_garanty
+    max-width: 100%
+
 
 
 
@@ -378,6 +438,10 @@
     .container
       padding: 0
 
+  .garanty
+    .postscript_garanty 
+      .postscript__wrapper
+        padding: 50px 10px 110px 20px  
 
 @media (max-width: 760px)
   .complete-set
@@ -396,6 +460,15 @@
   .button_participation
     img
       display: none
+  
+  .garanty
+    .postscript_garanty 
+      max-width: 65%
+      margin-top: 30px
+      order: 1
+      .postscript__wrapper
+    &__bg
+      margin-right: 0
         
 
 @media (max-width: 700px)
@@ -524,6 +597,9 @@
       display: none
   
   .participation
+    &__wrapper
+      padding-bottom: 0
+      min-height: 0
     &__item
       padding: 0
       &-inner
@@ -536,6 +612,25 @@
   .button_participation
     font-size: 12px
     line-height: 22px
+
+  .garanty
+    &__title
+      font-size: 24px
+      margin-bottom: 25px
+    &__descr
+      font-size: 12px
+      line-height: 20px
+    .postscript_garanty 
+      .postscript__text
+        font-size: 14px
+        line-height: 22px
+  .button_garanty
+    min-width: 0
+    img
+      display: none
+
+
+      
 
 @media (max-width: 480px)
   .header
@@ -583,10 +678,10 @@
     position: relative
     bottom: 0
     padding: 10px
-  .postscript__text
-    font-size: 14px
-    padding: 40px 20px
-    text-align: center
+    .postscript__text
+      font-size: 14px
+      padding: 40px 20px
+      text-align: center
   .reviews-more_symptoms
     left: 50%
     transform: translateX(-50%)
@@ -729,3 +824,13 @@
     &__item
       &-inner
         padding: 0
+
+  .garanty
+    &__descr
+      max-width: 276px
+    .postscript_garanty
+      max-width: 100% 
+
+  .button_garanty
+    font-size: 12px
+    line-height: 22px
