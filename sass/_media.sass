@@ -130,6 +130,19 @@
     &__top
       max-width: 750px
       margin-left: 0
+
+  .reviews
+    &__top
+      max-width: 100% 
+      width: 100%
+    &__title
+      display: block
+      text-align: center
+      margin: 0 auto
+  .reviews-tabs__review-item
+    &:nth-child(even)
+      display: none
+      
       
 
     
@@ -290,6 +303,35 @@
     max-width: 100%
     width: 100%
 
+  .reviews
+    .container
+      padding: 0
+    &__title
+      font-size: 30px
+      line-height: 40px
+  .reviews-tabs__review-item
+    &:nth-child(even)
+      display: none
+  .reviews-tab__item
+    width: 49%
+    padding: 25px 35px
+    text-align: center
+    line-height: 20px
+  .reviews-tabs__content-inner
+    padding-top: 20px
+  .reviews__bottom-wrapper
+    background-color: $bg-extra
+    flex-direction: column
+    justify-content: center
+    margin-top: 0
+    padding-top: 20px
+    padding-bottom: 75px
+  .reviews-more_reviews
+    margin-bottom: 30px
+  .button_reviews
+    margin-left: 0
+
+
 
 @media (max-width: 945px)
   .promo
@@ -326,6 +368,10 @@
     &__text
        margin-bottom: -25px
        z-index: -1
+  
+  .composition
+    .container
+      padding: 0
 
 
 @media (max-width: 760px)
@@ -440,6 +486,28 @@
       &-item
         font-size: 14px
         line-height: 22px
+  
+  .reviews
+    margin-bottom: 50px
+    &__title
+      font-size: 24px
+      line-height: 30px
+  .reviews-tab__item
+    font-size: 10px
+    line-height: 18px
+    padding: 25px 20px
+  .reviews-tabs__review-item
+    font-size: 14px
+    line-height: 22px
+  .reviews-tabs__content-inner
+    padding-left: 12px
+  .button_reviews
+    width: 100%
+    font-size: 12px
+    line-height: 22px
+    img
+      display: none
+  
 
 @media (max-width: 480px)
   .header
@@ -596,6 +664,7 @@
         font-size: 12px
   
   .composition
+    margin-bottom: 50px
     .container
       padding: 0
     &__item
@@ -611,6 +680,7 @@
     height: 299px
     width: 100%
     margin: 0
+    max-width: 100%
     .postscript__wrapper
       border: none
   .button_composition
