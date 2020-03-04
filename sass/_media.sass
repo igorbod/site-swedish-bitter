@@ -87,6 +87,7 @@
   .complete-set
     padding-top: 60px
     background-color: $bg-extra
+    margin-bottom: 100px
     &__title
       max-width: 80% 
       text-align: center
@@ -102,6 +103,33 @@
       min-height: 225px
       &-title
         font-size: 10px
+
+  .composition
+    &__item
+      width: 332px
+      height: 332px
+    &__row
+      &:first-child
+        flex-flow: wrap-reverse
+        justify-content: center
+        align-items: center
+      &:nth-child(2)
+        max-width: 1100px
+        margin: 0 auto
+        justify-content: space-around
+      &:nth-child(3)
+        flex-direction: row-reverse
+        justify-content: space-around
+  .postscript_composition
+    max-width: 700px
+  .postscript__text_composition
+    font-size: 14px
+    line-height: 24px
+    padding: 55px 30px 90px 30px
+
+    &__top
+      max-width: 750px
+      margin-left: 0
       
 
     
@@ -228,6 +256,41 @@
       margin: 7px
       &-title
 
+  .composition
+    &__row
+      justify-content: center
+      align-items: center
+      &:nth-child(2)
+        max-width: 730px
+        justify-content: center
+        align-items: center
+      &:nth-child(3)
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        max-width: 730px
+        margin: 0 auto        
+    &__item
+      margin: 10px
+        
+  .postscript_composition
+    max-width: 330px
+    max-height: 329px
+    width: 100%
+    height: 100%
+    padding: 0
+    margin: 10px
+  .postscript__text_composition
+    height: 330px
+    padding-top: 85px
+    .postscript-hidden
+      display: none
+  .button_composition
+    min-width: 0
+    max-width: 100%
+    width: 100%
+
+
 @media (max-width: 945px)
   .promo
     &__inner-suptitle,
@@ -271,6 +334,15 @@
       background-color: transparent
       flex-direction: column
 
+@media (max-width: 750px)
+  .composition
+    &__item_2
+      order: -1
+    &__row
+      &:nth-child(3)
+        flex-wrap: wrap-reverse
+        max-width: 700px
+        
 
 @media (max-width: 700px)
   .header
@@ -355,6 +427,19 @@
       margin-right: 0
     .history-form__wrapper
       text-align: center
+  
+  .composition
+    &__top
+      margin-left: 0
+    &__title
+      font-size: 24px
+      line-height: 30px
+      text-align: center
+    &__list
+      max-width: 
+      &-item
+        font-size: 14px
+        line-height: 22px
 
 @media (max-width: 480px)
   .header
@@ -509,3 +594,26 @@
         top: -15px
       &-title
         font-size: 12px
+  
+  .composition
+    .container
+      padding: 0
+    &__item
+      width: 299px
+      height: 299px
+    &__top
+      padding-right: 25px
+    &__list
+      margin-bottom: 20px
+  .postscript__text_composition
+    height: 299px
+  .postscript_composition
+    height: 299px
+    width: 100%
+    margin: 0
+    .postscript__wrapper
+      border: none
+  .button_composition
+    img
+      display: none
+  
